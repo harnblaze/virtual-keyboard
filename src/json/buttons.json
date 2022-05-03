@@ -1,0 +1,26 @@
+[
+	{
+		"ru" : {
+			"char": "а",
+			"shift": "А",
+			"capsLock": "А"
+		},
+		"en" : {
+			"char": "f",
+			"shift": "F",
+			"capsLock": "F"
+		}
+	},
+	{
+		"ru" : {
+			"char": "в",
+			"shift": "В",
+			"capsLock": "В"
+		},
+		"en" : {
+			"char": "d",
+			"shift": "D",
+			"capsLock": "D"
+		}
+	}
+]

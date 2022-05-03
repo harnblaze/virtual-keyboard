@@ -6,8 +6,8 @@ export default class TextArea extends Control {
     this.node.setAttribute('cols', 50);
     this.node.setAttribute('rows', 10);
     this.node.value = text;
-    this.node.oninput = (e) => {
-      onChange(e.target.value);
+    this.node.oninput = () => {
+      onChange(this.node.value);
     };
   }
 }

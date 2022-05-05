@@ -4,44 +4,26 @@ export default class Button extends Control {
   constructor(parent, dataButton, lang, clickButton) {
     super(parent, 'button', `button ${dataButton.type}-button`);
     this.dataButton = dataButton;
-    this.lang = lang;
-    this.isCapsLock = false;
-    this.isShift = false;
     this.text = dataButton[lang].char;
     this.node.onclick = () => {
       clickButton(this.dataButton.type, this.text);
     };
-    this.updateText();
+    this.updateTextButton(lang, false, false);
   }
 
-  updateText() {
-    if (this.isCapsLock) {
-      this.text = this.dataButton[this.lang].capsLock;
+  updateTextButton(lang, capsLock, shift) {
+    if (capsLock) {
+      this.text = this.dataButton[lang].capsLock;
     }
-    if (this.isShift) {
-      this.text = this.dataButton[this.lang].shift;
+    if (shift) {
+      this.text = this.dataButton[lang].shift;
     }
-    if (this.isCapsLock && this.isShift) {
-      this.text = this.dataButton[this.lang].capsLockShift;
+    if (capsLock && shift) {
+      this.text = this.dataButton[lang].capsLockShift;
     }
-    if (!this.isCapsLock && !this.isShift) {
-      this.text = this.dataButton[this.lang].char;
+    if (!capsLock && !shift) {
+      this.text = this.dataButton[lang].char;
     }
     this.node.textContent = this.text;
-  }
-
-  changeLang(lang) {
-    this.lang = lang;
-    this.updateText();
-  }
-
-  clickCapsLock(capsLock) {
-    this.isCapsLock = capsLock;
-    this.updateText();
-  }
-
-  clickShift(shift) {
-    this.isShift = shift;
-    this.updateText();
   }
 }

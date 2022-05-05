@@ -9,11 +9,13 @@ export default class App extends Control {
     this.lang = 'en';
     this.isCaps = false;
     this.isShift = false;
+    this.isShiftClick = false;
     this.buttons = [];
   }
 
   async start() {
     this.textArea = new TextArea(this.node, this.text, this.changeText);
+    this.textArea.node.focus();
     const res = await fetch('../json/buttons.json');
     const rowsButton = await res.json();
     this.rows = rowsButton.map((rowData) => {
@@ -26,23 +28,35 @@ export default class App extends Control {
       this.buttons = [...this.buttons, ...row.getButtons()];
       return row;
     });
+    document.body.addEventListener('keydown', (e) => {
+      e.preventDefault();
+      this.onKeyDown(e.code);
+    });
+    document.body.addEventListener('keyup', (e) => {
+      e.preventDefault();
+      this.onKeyUp(e.code);
+    });
   }
 
   clickButton = (type, char) => {
     if (type === 'letter') {
+      if (this.isShiftClick) {
+        this.clickShift();
+      }
       this.text += char;
       this.updateText();
-      if (this.isShift) {
-        this.changeShift();
-      }
     } else if (type === 'capsLock') {
       this.changeCapsLock();
     } else if (type === 'langButton') {
       this.changeLang();
     } else if (type === 'shift') {
-      this.changeShift();
+      this.clickShift();
     } else if (type === 'tab') {
       this.clickTab();
+    } else if (type === 'backspace') {
+      this.clickBackspace();
+    } else if (type === 'enter') {
+      this.clickEnter();
     }
   };
 
@@ -53,26 +67,78 @@ export default class App extends Control {
   changeLang = () => {
     this.lang = this.lang === 'en' ? 'ru' : 'en';
     this.buttons.forEach((button) => {
-      button.changeLang(this.lang);
+      button.updateTextButton(this.lang, this.isCaps, this.isShift);
     });
   };
 
   changeCapsLock = () => {
     this.isCaps = !this.isCaps;
+    this.buttons
+      .find((button) => button.dataButton.type === 'capsLock')
+      .node.classList.toggle('button-active');
     this.buttons.forEach((button) => {
-      button.clickCapsLock(this.isCaps);
+      button.updateTextButton(this.lang, this.isCaps, this.isShift);
     });
   };
 
-  changeShift = () => {
+  clickShift = () => {
     this.isShift = !this.isShift;
+    this.isShiftClick = !this.isShiftClick;
+    this.buttons
+      .find((button) => button.dataButton.type === 'shift')
+      .node.classList.toggle('button-active');
     this.buttons.forEach((button) => {
-      button.clickShift(this.isShift);
+      button.updateTextButton(this.lang, this.isCaps, this.isShift);
+    });
+  };
+
+  keyDownShift = (isShift) => {
+    this.isShift = isShift;
+    this.buttons.forEach((button) => {
+      button.updateTextButton(this.lang, this.isCaps, this.isShift);
     });
   };
 
   clickTab = () => {
     this.text += '\t';
     this.updateText();
+  };
+
+  clickEnter = () => {
+    this.text += '\n';
+    this.updateText();
+  };
+
+  clickBackspace = () => {
+    this.text = this.text.slice(0, -1);
+    this.updateText();
+  };
+
+  onKeyDown = (code) => {
+    const key = this.buttons.find((button) => button.dataButton.key === code);
+    if (key) {
+      if (key.dataButton.type === 'capsLock') {
+        this.clickButton(key.dataButton.type, key.text);
+      } else if (!(key.dataButton.type === 'shift')) {
+        this.clickButton(key.dataButton.type, key.text);
+        key.node.classList.add('button-active');
+      } else {
+        key.node.classList.toggle('button-active');
+        this.keyDownShift(true);
+      }
+    }
+  };
+
+  onKeyUp = (code) => {
+    const key = this.buttons.find((button) => button.dataButton.key === code);
+    if (key && !(key.dataButton.type === 'capsLock')) {
+      if (key.dataButton.type === 'shift') {
+        key.node.classList.toggle('button-active');
+        this.isShift = false;
+        this.keyDownShift(false);
+      } else {
+        key.node.classList.remove('button-active');
+      }
+    }
   };
 }

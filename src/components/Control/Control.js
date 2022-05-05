@@ -2,7 +2,7 @@ export default class Control {
   constructor(parent, tag, className) {
     const el = document.createElement(tag);
     parent.append(el);
-    el.classList.add(className);
+    el.className = className;
     this.node = el;
   }
 

@@ -1,30 +1,204 @@
-{
-  "langButton": {
-    "ru": {
-      "char": "ru",
-      "shift": "ru",
-      "capsLock": "ru"
-    },
-    "en": {
-      "char": "en",
-      "shift": "en",
-      "capsLock": "en"
-    }
-  },
-  "capsLock": {
-    "ru": {
-      "char": "CapsLock",
-      "shift": "CapsLock",
-      "capsLock": "CapsLock"
-    },
-    "en": {
-      "char": "CapsLock",
-      "shift": "CapsLock",
-      "capsLock": "CapsLock"
-    }
-  },
-  "letters": [
+[ 
+  [
 		{
+			"type" : "letter",
+      "ru": {
+        "char": "ё",
+        "shift": "Ё",
+        "capsLock": "Ё"
+      },
+      "en": {
+        "char": "`",
+        "shift": "~",
+        "capsLock": "`"
+      }
+    },
+		{
+			"type" : "letter",
+      "ru": {
+        "char": "1",
+        "shift": "!",
+        "capsLock": "1"
+      },
+      "en": {
+        "char": "1",
+        "shift": "!",
+        "capsLock": "1"
+      }
+    },
+		{
+			"type" : "letter",
+      "ru": {
+        "char": "2",
+        "shift": "\"",
+        "capsLock": "2"
+      },
+      "en": {
+        "char": "2",
+        "shift": "@",
+        "capsLock": "2"
+      }
+    },
+		{
+			"type" : "letter",
+      "ru": {
+        "char": "3",
+        "shift": "№",
+        "capsLock": "3"
+      },
+      "en": {
+        "char": "3",
+        "shift": "#",
+        "capsLock": "3"
+      }
+    },
+		{
+			"type" : "letter",
+      "ru": {
+        "char": "4",
+        "shift": ";",
+        "capsLock": "4"
+      },
+      "en": {
+        "char": "4",
+        "shift": "$",
+        "capsLock": "4"
+      }
+    },
+		{
+			"type" : "letter",
+      "ru": {
+        "char": "5",
+        "shift": "%",
+        "capsLock": "5"
+      },
+      "en": {
+        "char": "5",
+        "shift": "%",
+        "capsLock": "5"
+      }
+    },
+		{
+			"type" : "letter",
+      "ru": {
+        "char": "6",
+        "shift": ":",
+        "capsLock": "6"
+      },
+      "en": {
+        "char": "6",
+        "shift": "^",
+        "capsLock": "6"
+      }
+    },
+		{
+			"type" : "letter",
+      "ru": {
+        "char": "7",
+        "shift": "?",
+        "capsLock": "7"
+      },
+      "en": {
+        "char": "7",
+        "shift": "&",
+        "capsLock": "7"
+      }
+    },
+		{
+			"type" : "letter",
+      "ru": {
+        "char": "8",
+        "shift": "*",
+        "capsLock": "8"
+      },
+      "en": {
+        "char": "8",
+        "shift": "*",
+        "capsLock": "8"
+      }
+    },
+		{
+			"type" : "letter",
+      "ru": {
+        "char": "9",
+        "shift": "(",
+        "capsLock": "9"
+      },
+      "en": {
+        "char": "9",
+        "shift": "(",
+        "capsLock": "9"
+      }
+    },
+		{
+			"type" : "letter",
+      "ru": {
+        "char": "0",
+        "shift": ")",
+        "capsLock": "0"
+      },
+      "en": {
+        "char": "0",
+        "shift": ")",
+        "capsLock": "0"
+      }
+    },
+		{
+			"type" : "letter",
+      "ru": {
+        "char": "-",
+        "shift": "_",
+        "capsLock": "-"
+      },
+      "en": {
+        "char": "-",
+        "shift": "_",
+        "capsLock": "-"
+      }
+    },
+		{
+			"type" : "letter",
+      "ru": {
+        "char": "=",
+        "shift": "+",
+        "capsLock": "="
+      },
+      "en": {
+        "char": "=",
+        "shift": "+",
+        "capsLock": "="
+      }
+    },
+		{
+			"type" : "backspace",
+      "ru": {
+        "char": "Backspace",
+        "shift": "Backspace",
+        "capsLock": "Backspace"
+      },
+      "en": {
+        "char": "Backspace",
+        "shift": "Backspace",
+        "capsLock": "Backspace"
+      }
+    }
+	],
+	[
+		{
+			"type" : "tab",
+      "ru": {
+        "char": "Tab",
+        "shift": "Tab",
+        "capsLock": "Tab"
+      },
+      "en": {
+        "char": "Tab",
+        "shift": "Tab",
+        "capsLock": "Tab"
+      }
+    },
+		{
+			"type" : "letter",
       "ru": {
         "char": "й",
         "shift": "Й",
@@ -37,6 +211,7 @@
       }
     },
 		{
+			"type" : "letter",
       "ru": {
         "char": "ц",
         "shift": "Ц",
@@ -49,6 +224,7 @@
       }
     },
 		{
+			"type" : "letter",
       "ru": {
         "char": "у",
         "shift": "У",
@@ -61,6 +237,7 @@
       }
     },
 		{
+			"type" : "letter",
       "ru": {
         "char": "к",
         "shift": "К",
@@ -73,6 +250,7 @@
       }
     },
 		{
+			"type" : "letter",
       "ru": {
         "char": "е",
         "shift": "Е",
@@ -85,6 +263,7 @@
       }
     },
 		{
+			"type" : "letter",
       "ru": {
         "char": "н",
         "shift": "Н",
@@ -97,6 +276,7 @@
       }
     },
 		{
+			"type" : "letter",
       "ru": {
         "char": "г",
         "shift": "Г",
@@ -109,6 +289,7 @@
       }
     },
 		{
+			"type" : "letter",
       "ru": {
         "char": "ш",
         "shift": "ш",
@@ -121,6 +302,7 @@
       }
     },
 		{
+			"type" : "letter",
       "ru": {
         "char": "щ",
         "shift": "Щ",
@@ -133,6 +315,7 @@
       }
     },
 		{
+			"type" : "letter",
       "ru": {
         "char": "з",
         "shift": "З",
@@ -145,6 +328,7 @@
       }
     },
 		{
+			"type" : "letter",
       "ru": {
         "char": "х",
         "shift": "Х",
@@ -157,6 +341,7 @@
       }
     },
 		{
+			"type" : "letter",
       "ru": {
         "char": "ъ",
         "shift": "Ъ",
@@ -165,10 +350,11 @@
       "en": {
         "char": "]",
         "shift": "}",
-        "capsLock": "}"
+        "capsLock": "]"
       }
     },
 		{
+			"type" : "letter",
       "ru": {
         "char": "\\",
         "shift": "/",
@@ -176,11 +362,40 @@
       },
       "en": {
         "char": "\\",
-        "shift": "||",
+        "shift": "|",
         "capsLock": "\\"
       }
     },
 		{
+			"type" : "delete",
+      "ru": {
+        "char": "DEL",
+        "shift": "DEL",
+        "capsLock": "DEL"
+      },
+      "en": {
+        "char": "DEL",
+        "shift": "DEL",
+        "capsLock": "DEL"
+      }
+    }
+	],
+	[
+		{
+			"type" : "capsLock",
+	    "ru": {
+	      "char": "CapsLock",
+	      "shift": "CapsLock",
+	      "capsLock": "CapsLock"
+	    },
+	    "en": {
+	      "char": "CapsLock",
+	      "shift": "CapsLock",
+	      "capsLock": "CapsLock"
+	    }
+	  },
+		{
+			"type" : "letter",
       "ru": {
         "char": "ф",
         "shift": "Ф",
@@ -193,6 +408,7 @@
       }
     },
 		{
+			"type" : "letter",
       "ru": {
         "char": "ы",
         "shift": "Ы",
@@ -205,6 +421,7 @@
       }
     },
     {
+			"type" : "letter",
       "ru": {
         "char": "а",
         "shift": "А",
@@ -217,6 +434,7 @@
       }
     },
     {
+			"type" : "letter",
       "ru": {
         "char": "в",
         "shift": "В",
@@ -229,6 +447,7 @@
       }
     },
 		{
+			"type" : "letter",
       "ru": {
         "char": "п",
         "shift": "П",
@@ -241,6 +460,7 @@
       }
     },
 		{
+			"type" : "letter",
       "ru": {
         "char": "р",
         "shift": "Р",
@@ -253,6 +473,7 @@
       }
     },
 		{
+			"type" : "letter",
       "ru": {
         "char": "о",
         "shift": "О",
@@ -265,6 +486,7 @@
       }
     },
 		{
+			"type" : "letter",
       "ru": {
         "char": "л",
         "shift": "Л",
@@ -277,6 +499,7 @@
       }
     },
 		{
+			"type" : "letter",
       "ru": {
         "char": "ж",
         "shift": "Ж",
@@ -289,6 +512,7 @@
       }
     },
 		{
+			"type" : "letter",
       "ru": {
         "char": "э",
         "shift": "Э",
@@ -301,6 +525,35 @@
       }
     },
 		{
+			"type" : "enter",
+	    "ru": {
+	      "char": "Enter",
+	      "shift": "Enter",
+	      "capsLock": "Enter"
+	    },
+	    "en": {
+	      "char": "Enter",
+	      "shift": "Enter",
+	      "capsLock": "Enter"
+	    }
+	  }
+	],
+	[
+		{
+			"type" : "shift",
+	    "ru": {
+	      "char": "Shift",
+	      "shift": "Shift",
+	      "capsLock": "Shift"
+	    },
+	    "en": {
+	      "char": "Shift",
+	      "shift": "Shift",
+	      "capsLock": "Shift"
+	    }
+	  },
+		{
+			"type" : "letter",
       "ru": {
         "char": "я",
         "shift": "Я",
@@ -313,6 +566,7 @@
       }
     },
 		{
+			"type" : "letter",
       "ru": {
         "char": "ч",
         "shift": "Ч",
@@ -325,6 +579,7 @@
       }
     },
 		{
+			"type" : "letter",
       "ru": {
         "char": "с",
         "shift": "С",
@@ -337,6 +592,7 @@
       }
     },
 		{
+			"type" : "letter",
       "ru": {
         "char": "м",
         "shift": "М",
@@ -349,6 +605,7 @@
       }
     },
 		{
+			"type" : "letter",
       "ru": {
         "char": "и",
         "shift": "И",
@@ -361,6 +618,7 @@
       }
     },
 		{
+			"type" : "letter",
       "ru": {
         "char": "т",
         "shift": "Т",
@@ -373,6 +631,7 @@
       }
     },
 		{
+			"type" : "letter",
       "ru": {
         "char": "ь",
         "shift": "Ь",
@@ -385,6 +644,7 @@
       }
     },
 		{
+			"type" : "letter",
       "ru": {
         "char": "б",
         "shift": "Б",
@@ -397,6 +657,7 @@
       }
     },
 		{
+			"type" : "letter",
       "ru": {
         "char": "ю",
         "shift": "Ю",
@@ -409,6 +670,7 @@
       }
     },
 		{
+			"type" : "letter",
       "ru": {
         "char": ".",
         "shift": ",",
@@ -419,6 +681,19 @@
         "shift": "?",
         "capsLock": "/"
       }
-    }
+    },
+		{
+			"type" : "langButton",
+	    "ru": {
+	      "char": "ru",
+	      "shift": "ru",
+	      "capsLock": "ru"
+	    },
+	    "en": {
+	      "char": "en",
+	      "shift": "en",
+	      "capsLock": "en"
+	    }
+	  }
   ]
-}
+]

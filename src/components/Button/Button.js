@@ -1,23 +1,25 @@
 import Control from '../Control/Control';
 
 export default class Button extends Control {
-  constructor(parent, options, lang, clickButton) {
-    super(parent, 'button', 'button');
-    this.options = options;
+  constructor(parent, dataButton, lang, clickButton) {
+    super(parent, 'button', `button ${dataButton.type}-button`);
+    this.dataButton = dataButton;
     this.lang = lang;
     this.isCapsLock = false;
-    this.text = this.options[lang].char;
+    this.text = dataButton[lang].char;
     this.node.onclick = () => {
-      clickButton(this.node.innerText);
+      clickButton(this.dataButton.type, this.text);
     };
     this.updateText();
   }
 
   updateText() {
-    this.text = this.isCapsLock
-      ? this.options[this.lang].capsLock
-      : this.options[this.lang].char;
-    this.node.innerText = this.text;
+    if (this.isCapsLock) {
+      this.text = this.dataButton[this.lang].capsLock;
+    } else {
+      this.text = this.dataButton[this.lang].char;
+    }
+    this.node.textContent = this.text;
   }
 
   changeLang(lang) {
@@ -25,8 +27,8 @@ export default class Button extends Control {
     this.updateText();
   }
 
-  clickCapsLock() {
-    this.isCapsLock = !this.isCapsLock;
+  clickCapsLock(capsLock) {
+    this.isCapsLock = capsLock;
     this.updateText();
   }
 }

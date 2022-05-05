@@ -6,6 +6,7 @@ export default class Button extends Control {
     this.dataButton = dataButton;
     this.lang = lang;
     this.isCapsLock = false;
+    this.isShift = false;
     this.text = dataButton[lang].char;
     this.node.onclick = () => {
       clickButton(this.dataButton.type, this.text);
@@ -16,7 +17,14 @@ export default class Button extends Control {
   updateText() {
     if (this.isCapsLock) {
       this.text = this.dataButton[this.lang].capsLock;
-    } else {
+    }
+    if (this.isShift) {
+      this.text = this.dataButton[this.lang].shift;
+    }
+    if (this.isCapsLock && this.isShift) {
+      this.text = this.dataButton[this.lang].capsLockShift;
+    }
+    if (!this.isCapsLock && !this.isShift) {
       this.text = this.dataButton[this.lang].char;
     }
     this.node.textContent = this.text;
@@ -29,6 +37,11 @@ export default class Button extends Control {
 
   clickCapsLock(capsLock) {
     this.isCapsLock = capsLock;
+    this.updateText();
+  }
+
+  clickShift(shift) {
+    this.isShift = shift;
     this.updateText();
   }
 }

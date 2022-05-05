@@ -8,6 +8,7 @@ export default class App extends Control {
     this.text = '';
     this.lang = 'en';
     this.isCaps = false;
+    this.isShift = false;
     this.buttons = [];
   }
 
@@ -27,20 +28,21 @@ export default class App extends Control {
     });
   }
 
-  // changeText = (value) => {
-  //   this.text = value;
-  // };
-
   clickButton = (type, char) => {
     if (type === 'letter') {
       this.text += char;
       this.updateText();
-    }
-    if (type === 'capsLock') {
+      if (this.isShift) {
+        this.changeShift();
+      }
+    } else if (type === 'capsLock') {
       this.changeCapsLock();
-    }
-    if (type === 'langButton') {
+    } else if (type === 'langButton') {
       this.changeLang();
+    } else if (type === 'shift') {
+      this.changeShift();
+    } else if (type === 'tab') {
+      this.clickTab();
     }
   };
 
@@ -60,5 +62,17 @@ export default class App extends Control {
     this.buttons.forEach((button) => {
       button.clickCapsLock(this.isCaps);
     });
+  };
+
+  changeShift = () => {
+    this.isShift = !this.isShift;
+    this.buttons.forEach((button) => {
+      button.clickShift(this.isShift);
+    });
+  };
+
+  clickTab = () => {
+    this.text += '\t';
+    this.updateText();
   };
 }

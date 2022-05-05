@@ -1,699 +1,820 @@
-[ 
+[
   [
-		{
-			"type" : "letter",
+    {
+      "type": "letter",
       "ru": {
         "char": "ё",
         "shift": "Ё",
-        "capsLock": "Ё"
+        "capsLock": "Ё",
+        "capsLockShift": "ё"
       },
       "en": {
         "char": "`",
         "shift": "~",
-        "capsLock": "`"
+        "capsLock": "`",
+        "capsLockShift": "~"
       }
     },
-		{
-			"type" : "letter",
+    {
+      "type": "letter",
       "ru": {
         "char": "1",
         "shift": "!",
-        "capsLock": "1"
+        "capsLock": "1",
+        "capsLockShift": "!"
       },
       "en": {
         "char": "1",
         "shift": "!",
-        "capsLock": "1"
+        "capsLock": "1",
+        "capsLockShift": "!"
       }
     },
-		{
-			"type" : "letter",
+    {
+      "type": "letter",
       "ru": {
         "char": "2",
         "shift": "\"",
-        "capsLock": "2"
+        "capsLock": "2",
+        "capsLockShift": "\""
       },
       "en": {
         "char": "2",
         "shift": "@",
-        "capsLock": "2"
+        "capsLock": "2",
+        "capsLockShift": "@"
       }
     },
-		{
-			"type" : "letter",
+    {
+      "type": "letter",
       "ru": {
         "char": "3",
         "shift": "№",
-        "capsLock": "3"
+        "capsLock": "3",
+        "capsLockShift": "№"
       },
       "en": {
         "char": "3",
         "shift": "#",
-        "capsLock": "3"
+        "capsLock": "3",
+        "capsLockShift": "#"
       }
     },
-		{
-			"type" : "letter",
+    {
+      "type": "letter",
       "ru": {
         "char": "4",
         "shift": ";",
-        "capsLock": "4"
+        "capsLock": "4",
+        "capsLockShift": ";"
       },
       "en": {
         "char": "4",
         "shift": "$",
-        "capsLock": "4"
+        "capsLock": "4",
+        "capsLockShift": "$"
       }
     },
-		{
-			"type" : "letter",
+    {
+      "type": "letter",
       "ru": {
         "char": "5",
         "shift": "%",
-        "capsLock": "5"
+        "capsLock": "5",
+        "capsLockShift": "%"
       },
       "en": {
         "char": "5",
         "shift": "%",
-        "capsLock": "5"
+        "capsLock": "5",
+        "capsLockShift": "%"
       }
     },
-		{
-			"type" : "letter",
+    {
+      "type": "letter",
       "ru": {
         "char": "6",
         "shift": ":",
-        "capsLock": "6"
+        "capsLock": "6",
+        "capsLockShift": ":"
       },
       "en": {
         "char": "6",
         "shift": "^",
-        "capsLock": "6"
+        "capsLock": "6",
+        "capsLockShift": "^"
       }
     },
-		{
-			"type" : "letter",
+    {
+      "type": "letter",
       "ru": {
         "char": "7",
         "shift": "?",
-        "capsLock": "7"
+        "capsLock": "7",
+        "capsLockShift": "?"
       },
       "en": {
         "char": "7",
         "shift": "&",
-        "capsLock": "7"
+        "capsLock": "7",
+        "capsLockShift": "&"
       }
     },
-		{
-			"type" : "letter",
+    {
+      "type": "letter",
       "ru": {
         "char": "8",
         "shift": "*",
-        "capsLock": "8"
+        "capsLock": "8",
+        "capsLockShift": "*"
       },
       "en": {
         "char": "8",
         "shift": "*",
-        "capsLock": "8"
+        "capsLock": "8",
+        "capsLockShift": "*"
       }
     },
-		{
-			"type" : "letter",
+    {
+      "type": "letter",
       "ru": {
         "char": "9",
         "shift": "(",
-        "capsLock": "9"
+        "capsLock": "9",
+        "capsLockShift": "("
       },
       "en": {
         "char": "9",
         "shift": "(",
-        "capsLock": "9"
+        "capsLock": "9",
+        "capsLockShift": "("
       }
     },
-		{
-			"type" : "letter",
+    {
+      "type": "letter",
       "ru": {
         "char": "0",
         "shift": ")",
-        "capsLock": "0"
+        "capsLock": "0",
+        "capsLockShift": ")"
       },
       "en": {
         "char": "0",
         "shift": ")",
-        "capsLock": "0"
+        "capsLock": "0",
+        "capsLockShift": ")"
       }
     },
-		{
-			"type" : "letter",
+    {
+      "type": "letter",
       "ru": {
         "char": "-",
         "shift": "_",
-        "capsLock": "-"
+        "capsLock": "-",
+        "capsLockShift": "_"
       },
       "en": {
         "char": "-",
         "shift": "_",
-        "capsLock": "-"
+        "capsLock": "-",
+        "capsLockShift": "_"
       }
     },
-		{
-			"type" : "letter",
+    {
+      "type": "letter",
       "ru": {
         "char": "=",
         "shift": "+",
-        "capsLock": "="
+        "capsLock": "=",
+        "capsLockShift": "+"
       },
       "en": {
         "char": "=",
         "shift": "+",
-        "capsLock": "="
+        "capsLock": "=",
+        "capsLockShift": "+"
       }
     },
-		{
-			"type" : "backspace",
+    {
+      "type": "backspace",
       "ru": {
-        "char": "Backspace",
+        "char": "Backspace &#8629;",
         "shift": "Backspace",
-        "capsLock": "Backspace"
+        "capsLock": "Backspace",
+        "capsLockShift": "Backspace"
       },
       "en": {
         "char": "Backspace",
         "shift": "Backspace",
-        "capsLock": "Backspace"
+        "capsLock": "Backspace",
+        "capsLockShift": "Backspace"
       }
     }
-	],
-	[
-		{
-			"type" : "tab",
+  ],
+  [
+    {
+      "type": "tab",
       "ru": {
         "char": "Tab",
         "shift": "Tab",
-        "capsLock": "Tab"
+        "capsLock": "Tab",
+        "capsLockShift": "Tab"
       },
       "en": {
         "char": "Tab",
         "shift": "Tab",
-        "capsLock": "Tab"
+        "capsLock": "Tab",
+        "capsLockShift": "Tab"
       }
     },
-		{
-			"type" : "letter",
+    {
+      "type": "letter",
       "ru": {
         "char": "й",
         "shift": "Й",
-        "capsLock": "Й"
+        "capsLock": "Й",
+        "capsLockShift": "й"
       },
       "en": {
         "char": "q",
         "shift": "Q",
-        "capsLock": "Q"
+        "capsLock": "Q",
+        "capsLockShift": "q"
       }
     },
-		{
-			"type" : "letter",
+    {
+      "type": "letter",
       "ru": {
         "char": "ц",
         "shift": "Ц",
-        "capsLock": "Ц"
+        "capsLock": "Ц",
+        "capsLockShift": "ц"
       },
       "en": {
         "char": "w",
         "shift": "W",
-        "capsLock": "W"
+        "capsLock": "W",
+        "capsLockShift": "w"
       }
     },
-		{
-			"type" : "letter",
+    {
+      "type": "letter",
       "ru": {
         "char": "у",
         "shift": "У",
-        "capsLock": "У"
+        "capsLock": "У",
+        "capsLockShift": "у"
       },
       "en": {
         "char": "e",
         "shift": "E",
-        "capsLock": "E"
+        "capsLock": "E",
+        "capsLockShift": "e"
       }
     },
-		{
-			"type" : "letter",
+    {
+      "type": "letter",
       "ru": {
         "char": "к",
         "shift": "К",
-        "capsLock": "К"
+        "capsLock": "К",
+        "capsLockShift": "к"
       },
       "en": {
         "char": "r",
         "shift": "R",
-        "capsLock": "R"
+        "capsLock": "R",
+        "capsLockShift": "r"
       }
     },
-		{
-			"type" : "letter",
+    {
+      "type": "letter",
       "ru": {
         "char": "е",
         "shift": "Е",
-        "capsLock": "Е"
+        "capsLock": "Е",
+        "capsLockShift": "е"
       },
       "en": {
         "char": "t",
         "shift": "T",
-        "capsLock": "T"
+        "capsLock": "T",
+        "capsLockShift": "t"
       }
     },
-		{
-			"type" : "letter",
+    {
+      "type": "letter",
       "ru": {
         "char": "н",
         "shift": "Н",
-        "capsLock": "Н"
+        "capsLock": "Н",
+        "capsLockShift": "н"
       },
       "en": {
         "char": "y",
         "shift": "Y",
-        "capsLock": "Y"
+        "capsLock": "Y",
+        "capsLockShift": "y"
       }
     },
-		{
-			"type" : "letter",
+    {
+      "type": "letter",
       "ru": {
         "char": "г",
         "shift": "Г",
-        "capsLock": "Г"
+        "capsLock": "Г",
+        "capsLockShift": "г"
       },
       "en": {
         "char": "u",
         "shift": "U",
-        "capsLock": "U"
+        "capsLock": "U",
+        "capsLockShift": "u"
       }
     },
-		{
-			"type" : "letter",
+    {
+      "type": "letter",
       "ru": {
         "char": "ш",
-        "shift": "ш",
-        "capsLock": "Щ"
+        "shift": "Ш",
+        "capsLock": "Ш",
+        "capsLockShift": "ш"
       },
       "en": {
         "char": "i",
         "shift": "I",
-        "capsLock": "I"
+        "capsLock": "I",
+        "capsLockShift": "i"
       }
     },
-		{
-			"type" : "letter",
+    {
+      "type": "letter",
       "ru": {
         "char": "щ",
         "shift": "Щ",
-        "capsLock": "Щ"
+        "capsLock": "Щ",
+        "capsLockShift": "щ"
       },
       "en": {
         "char": "o",
         "shift": "O",
-        "capsLock": "O"
+        "capsLock": "O",
+        "capsLockShift": "o"
       }
     },
-		{
-			"type" : "letter",
+    {
+      "type": "letter",
       "ru": {
         "char": "з",
         "shift": "З",
-        "capsLock": "З"
+        "capsLock": "З",
+        "capsLockShift": "з"
       },
       "en": {
         "char": "p",
         "shift": "P",
-        "capsLock": "P"
+        "capsLock": "P",
+        "capsLockShift": "p"
       }
     },
-		{
-			"type" : "letter",
+    {
+      "type": "letter",
       "ru": {
         "char": "х",
         "shift": "Х",
-        "capsLock": "Х"
+        "capsLock": "Х",
+        "capsLockShift": "х"
       },
       "en": {
         "char": "[",
         "shift": "{",
-        "capsLock": "["
+        "capsLock": "[",
+        "capsLockShift": "{"
       }
     },
-		{
-			"type" : "letter",
+    {
+      "type": "letter",
       "ru": {
         "char": "ъ",
         "shift": "Ъ",
-        "capsLock": "Ъ"
+        "capsLock": "Ъ",
+        "capsLockShift": "ъ"
       },
       "en": {
         "char": "]",
         "shift": "}",
-        "capsLock": "]"
+        "capsLock": "]",
+        "capsLockShift": "}"
       }
     },
-		{
-			"type" : "letter",
+    {
+      "type": "letter",
       "ru": {
         "char": "\\",
         "shift": "/",
-        "capsLock": "\\"
+        "capsLock": "\\",
+        "capsLockShift": "/"
       },
       "en": {
         "char": "\\",
         "shift": "|",
-        "capsLock": "\\"
+        "capsLock": "\\",
+        "capsLockShift": "|"
       }
     },
-		{
-			"type" : "delete",
+    {
+      "type": "delete",
       "ru": {
         "char": "DEL",
         "shift": "DEL",
-        "capsLock": "DEL"
+        "capsLock": "DEL",
+        "capsLockShift": "DEL"
       },
       "en": {
         "char": "DEL",
         "shift": "DEL",
-        "capsLock": "DEL"
+        "capsLock": "DEL",
+        "capsLockShift": "DEL"
       }
     }
-	],
-	[
-		{
-			"type" : "capsLock",
-	    "ru": {
-	      "char": "CapsLock",
-	      "shift": "CapsLock",
-	      "capsLock": "CapsLock"
-	    },
-	    "en": {
-	      "char": "CapsLock",
-	      "shift": "CapsLock",
-	      "capsLock": "CapsLock"
-	    }
-	  },
-		{
-			"type" : "letter",
+  ],
+  [
+    {
+      "type": "capsLock",
+      "ru": {
+        "char": "CapsLock",
+        "shift": "CapsLock",
+        "capsLock": "CapsLock",
+        "capsLockShift": "CapsLock"
+      },
+      "en": {
+        "char": "CapsLock",
+        "shift": "CapsLock",
+        "capsLock": "CapsLock",
+        "capsLockShift": "CapsLock"
+      }
+    },
+    {
+      "type": "letter",
       "ru": {
         "char": "ф",
         "shift": "Ф",
-        "capsLock": "Ф"
+        "capsLock": "Ф",
+        "capsLockShift": "ф"
       },
       "en": {
         "char": "a",
         "shift": "A",
-        "capsLock": "A"
+        "capsLock": "A",
+        "capsLockShift": "a"
       }
     },
-		{
-			"type" : "letter",
+    {
+      "type": "letter",
       "ru": {
         "char": "ы",
         "shift": "Ы",
-        "capsLock": "Ы"
+        "capsLock": "Ы",
+        "capsLockShift": "ы"
       },
       "en": {
         "char": "s",
         "shift": "S",
-        "capsLock": "S"
+        "capsLock": "S",
+        "capsLockShift": "s"
       }
     },
     {
-			"type" : "letter",
-      "ru": {
-        "char": "а",
-        "shift": "А",
-        "capsLock": "А"
-      },
-      "en": {
-        "char": "f",
-        "shift": "F",
-        "capsLock": "F"
-      }
-    },
-    {
-			"type" : "letter",
+      "type": "letter",
       "ru": {
         "char": "в",
         "shift": "В",
-        "capsLock": "В"
+        "capsLock": "В",
+        "capsLockShift": "в"
       },
       "en": {
         "char": "d",
         "shift": "D",
-        "capsLock": "D"
+        "capsLock": "D",
+        "capsLockShift": "d"
       }
     },
-		{
-			"type" : "letter",
+    {
+      "type": "letter",
+      "ru": {
+        "char": "а",
+        "shift": "А",
+        "capsLock": "А",
+        "capsLockShift": "а"
+      },
+      "en": {
+        "char": "f",
+        "shift": "F",
+        "capsLock": "F",
+        "capsLockShift": "f"
+      }
+    },
+    {
+      "type": "letter",
       "ru": {
         "char": "п",
         "shift": "П",
-        "capsLock": "П"
+        "capsLock": "П",
+        "capsLockShift": "п"
       },
       "en": {
         "char": "g",
         "shift": "G",
-        "capsLock": "G"
+        "capsLock": "G",
+        "capsLockShift": "g"
       }
     },
-		{
-			"type" : "letter",
+    {
+      "type": "letter",
       "ru": {
         "char": "р",
         "shift": "Р",
-        "capsLock": "Р"
+        "capsLock": "Р",
+        "capsLockShift": "р"
       },
       "en": {
-        "char": "р",
-        "shift": "Р",
-        "capsLock": "Р"
+        "char": "h",
+        "shift": "H",
+        "capsLock": "H",
+        "capsLockShift": "h"
       }
     },
-		{
-			"type" : "letter",
+    {
+      "type": "letter",
       "ru": {
         "char": "о",
         "shift": "О",
-        "capsLock": "О"
+        "capsLock": "О",
+        "capsLockShift": "о"
       },
       "en": {
         "char": "j",
         "shift": "J",
-        "capsLock": "J"
+        "capsLock": "J",
+        "capsLockShift": "j"
       }
     },
-		{
-			"type" : "letter",
+    {
+      "type": "letter",
       "ru": {
         "char": "л",
         "shift": "Л",
-        "capsLock": "Л"
+        "capsLock": "Л",
+        "capsLockShift": "л"
       },
       "en": {
         "char": "k",
         "shift": "K",
-        "capsLock": "K"
+        "capsLock": "K",
+        "capsLockShift": "k"
       }
     },
-		{
-			"type" : "letter",
+    {
+      "type": "letter",
+      "ru": {
+        "char": "д",
+        "shift": "Д",
+        "capsLock": "Д",
+        "capsLockShift": "д"
+      },
+      "en": {
+        "char": "l",
+        "shift": "L",
+        "capsLock": "L",
+        "capsLockShift": "l"
+      }
+    },
+    {
+      "type": "letter",
       "ru": {
         "char": "ж",
         "shift": "Ж",
-        "capsLock": "Ж"
+        "capsLock": "Ж",
+        "capsLockShift": "ж"
       },
       "en": {
         "char": ";",
         "shift": ":",
-        "capsLock": ";"
+        "capsLock": ";",
+        "capsLockShift": ":"
       }
     },
-		{
-			"type" : "letter",
+    {
+      "type": "letter",
       "ru": {
         "char": "э",
         "shift": "Э",
-        "capsLock": "Э"
+        "capsLock": "Э",
+        "capsLockShift": "э"
       },
       "en": {
         "char": "'",
         "shift": "\"",
-        "capsLock": "'"
+        "capsLock": "'",
+        "capsLockShift": "\""
       }
     },
-		{
-			"type" : "enter",
-	    "ru": {
-	      "char": "Enter",
-	      "shift": "Enter",
-	      "capsLock": "Enter"
-	    },
-	    "en": {
-	      "char": "Enter",
-	      "shift": "Enter",
-	      "capsLock": "Enter"
-	    }
-	  }
-	],
-	[
-		{
-			"type" : "shift",
-	    "ru": {
-	      "char": "Shift",
-	      "shift": "Shift",
-	      "capsLock": "Shift"
-	    },
-	    "en": {
-	      "char": "Shift",
-	      "shift": "Shift",
-	      "capsLock": "Shift"
-	    }
-	  },
-		{
-			"type" : "letter",
+    {
+      "type": "enter",
+      "ru": {
+        "char": "Enter ↵",
+        "shift": "Enter ↵",
+        "capsLock": "Enter ↵",
+        "capsLockShift": "Enter ↵"
+      },
+      "en": {
+        "char": "Enter ↵",
+        "shift": "Enter ↵",
+        "capsLock": "Enter ↵",
+        "capsLockShift": "Enter ↵"
+      }
+    }
+  ],
+  [
+    {
+      "type": "shift",
+      "ru": {
+        "char": "Shift",
+        "shift": "Shift",
+        "capsLock": "Shift",
+        "capsLockShift": "Shift"
+      },
+      "en": {
+        "char": "Shift",
+        "shift": "Shift",
+        "capsLock": "Shift",
+        "capsLockShift": "Shift"
+      }
+    },
+    {
+      "type": "letter",
       "ru": {
         "char": "я",
         "shift": "Я",
-        "capsLock": "Я"
+        "capsLock": "Я",
+        "capsLockShift": "я"
       },
       "en": {
         "char": "z",
         "shift": "Z",
-        "capsLock": "Z"
+        "capsLock": "Z",
+        "capsLockShift": "z"
       }
     },
-		{
-			"type" : "letter",
+    {
+      "type": "letter",
       "ru": {
         "char": "ч",
         "shift": "Ч",
-        "capsLock": "Ч"
+        "capsLock": "Ч",
+        "capsLockShift": "ч"
       },
       "en": {
         "char": "x",
         "shift": "X",
-        "capsLock": "X"
+        "capsLock": "X",
+        "capsLockShift": "x"
       }
     },
-		{
-			"type" : "letter",
+    {
+      "type": "letter",
       "ru": {
         "char": "с",
         "shift": "С",
-        "capsLock": "С"
+        "capsLock": "С",
+        "capsLockShift": "с"
       },
       "en": {
         "char": "c",
         "shift": "C",
-        "capsLock": "C"
+        "capsLock": "C",
+        "capsLockShift": "c"
       }
     },
-		{
-			"type" : "letter",
+    {
+      "type": "letter",
       "ru": {
         "char": "м",
         "shift": "М",
-        "capsLock": "М"
+        "capsLock": "М",
+        "capsLockShift": "м"
       },
       "en": {
         "char": "v",
         "shift": "V",
-        "capsLock": "V"
+        "capsLock": "V",
+        "capsLockShift": "v"
       }
     },
-		{
-			"type" : "letter",
+    {
+      "type": "letter",
       "ru": {
         "char": "и",
         "shift": "И",
-        "capsLock": "И"
+        "capsLock": "И",
+        "capsLockShift": "и"
       },
       "en": {
         "char": "b",
         "shift": "B",
-        "capsLock": "B"
+        "capsLock": "B",
+        "capsLockShift": "b"
       }
     },
-		{
-			"type" : "letter",
+    {
+      "type": "letter",
       "ru": {
         "char": "т",
         "shift": "Т",
-        "capsLock": "Т"
+        "capsLock": "Т",
+        "capsLockShift": "т"
       },
       "en": {
         "char": "n",
         "shift": "N",
-        "capsLock": "N"
+        "capsLock": "N",
+        "capsLockShift": "n"
       }
     },
-		{
-			"type" : "letter",
+    {
+      "type": "letter",
       "ru": {
         "char": "ь",
         "shift": "Ь",
-        "capsLock": "Ь"
+        "capsLock": "Ь",
+        "capsLockShift": "ь"
       },
       "en": {
         "char": "m",
         "shift": "M",
-        "capsLock": "M"
+        "capsLock": "M",
+        "capsLockShift": "m"
       }
     },
-		{
-			"type" : "letter",
+    {
+      "type": "letter",
       "ru": {
         "char": "б",
         "shift": "Б",
-        "capsLock": "Б"
+        "capsLock": "Б",
+        "capsLockShift": "б"
       },
       "en": {
         "char": ",",
         "shift": "<",
-        "capsLock": ","
+        "capsLock": ",",
+        "capsLockShift": "<"
       }
     },
-		{
-			"type" : "letter",
+    {
+      "type": "letter",
       "ru": {
         "char": "ю",
         "shift": "Ю",
-        "capsLock": "Ю"
+        "capsLock": "Ю",
+        "capsLockShift": "ю"
       },
       "en": {
         "char": ".",
         "shift": ">",
-        "capsLock": "."
+        "capsLock": ".",
+        "capsLockShift": ">"
       }
     },
-		{
-			"type" : "letter",
+    {
+      "type": "letter",
       "ru": {
         "char": ".",
         "shift": ",",
-        "capsLock": "."
+        "capsLock": ".",
+        "capsLockShift": ","
       },
       "en": {
         "char": "/",
         "shift": "?",
-        "capsLock": "/"
+        "capsLock": "/",
+        "capsLockShift": "?"
       }
     },
-		{
-			"type" : "langButton",
-	    "ru": {
-	      "char": "ru",
-	      "shift": "ru",
-	      "capsLock": "ru"
-	    },
-	    "en": {
-	      "char": "en",
-	      "shift": "en",
-	      "capsLock": "en"
-	    }
-	  }
+    {
+      "type": "langButton",
+      "ru": {
+        "char": "en",
+        "shift": "en",
+        "capsLock": "en",
+        "capsLockShift": "en"
+      },
+      "en": {
+        "char": "ru",
+        "shift": "ru",
+        "capsLock": "ru",
+        "capsLockShift": "ru"
+      }
+    }
   ]
 ]

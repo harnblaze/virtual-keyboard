@@ -1,4 +1,5 @@
 import Control from '../Control/Control';
+import Description from '../Description/Description';
 import RowButtons from '../RowButtons/RowButtons';
 import TextArea from '../TextArea/TextArea';
 
@@ -28,8 +29,12 @@ export default class App extends Control {
       this.buttons = [...this.buttons, ...row.getButtons()];
       return row;
     });
+    this.description = new Description(this.node);
     document.body.addEventListener('keydown', (e) => {
       e.preventDefault();
+      if ((e.altKey || e.code === 'AltRight') && e.ctrlKey) {
+        this.changeLang();
+      }
       this.onKeyDown(e.code);
     });
     document.body.addEventListener('keyup', (e) => {
@@ -39,12 +44,15 @@ export default class App extends Control {
   }
 
   clickButton = (type, char) => {
-    if (type === 'letter') {
+    if (type === 'letter' || type === 'space' || type === 'arrow') {
       if (this.isShiftClick) {
         this.clickShift();
       }
-      this.text += char;
+      const pos = this.textArea.node.selectionStart;
+      this.text = this.text.slice(0, pos) + char + this.text.slice(pos);
       this.updateText();
+      this.textArea.node.selectionEnd = pos + 1;
+      this.textArea.node.selectionStart = pos + 1;
     } else if (type === 'capsLock') {
       this.changeCapsLock();
     } else if (type === 'langButton') {
@@ -57,6 +65,8 @@ export default class App extends Control {
       this.clickBackspace();
     } else if (type === 'enter') {
       this.clickEnter();
+    } else if (type === 'delete') {
+      this.onDelete();
     }
   };
 
@@ -110,9 +120,32 @@ export default class App extends Control {
   };
 
   clickBackspace = () => {
-    this.text = this.text.slice(0, -1);
+    const pos = this.textArea.node.selectionStart;
+    if (!pos) return;
+    this.text = this.text.slice(0, pos - 1) + this.text.slice(pos);
     this.updateText();
+    this.textArea.node.selectionEnd = pos - 1;
+    this.textArea.node.selectionStart = pos - 1;
   };
+
+  onDelete() {
+    const pos = this.textArea.node.selectionStart;
+    this.text = this.text.slice(0, pos) + this.text.slice(pos + 1);
+    this.updateText();
+    this.textArea.node.selectionEnd = pos;
+    this.textArea.node.selectionStart = pos;
+  }
+
+  onArrow(key) {
+    const pos = this.textArea.node.selectionStart;
+    if (key === 'ArrowLeft' && pos !== 0) {
+      this.textArea.node.selectionEnd = pos - 1;
+      this.textArea.node.selectionStart = pos - 1;
+    } else if (key === 'ArrowRight') {
+      this.textArea.node.selectionEnd = pos - 1;
+      this.textArea.node.selectionStart = pos - 1;
+    }
+  }
 
   onKeyDown = (code) => {
     const key = this.buttons.find((button) => button.dataButton.key === code);

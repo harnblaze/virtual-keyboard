@@ -1,3 +1,4 @@
+import ColorButton from '../ColorButton/ColorButton';
 import Control from '../Control/Control';
 import Description from '../Description/Description';
 import RowButtons from '../RowButtons/RowButtons';
@@ -30,6 +31,11 @@ export default class App extends Control {
       return row;
     });
     this.description = new Description(this.node);
+    this.colorButton = new ColorButton(
+      this.node,
+      'Change color',
+      this.changeColorToBlack,
+    );
     document.body.addEventListener('keydown', (e) => {
       e.preventDefault();
       if ((e.altKey || e.code === 'AltRight') && e.ctrlKey) {
@@ -173,5 +179,12 @@ export default class App extends Control {
         key.node.classList.remove('button-active');
       }
     }
+  };
+
+  changeColorToBlack = () => {
+    document.body.classList.toggle('black');
+    this.textArea.node.classList.toggle('black');
+    this.buttons.forEach((button) => button.node.classList.toggle('black'));
+    this.colorButton.node.classList.toggle('black');
   };
 }

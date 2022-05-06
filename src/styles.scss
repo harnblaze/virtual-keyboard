@@ -6,16 +6,21 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+
+  &.black {
+    background-color: #131313;
+    color: #eeeeee;
+  }
 }
 
 .app {
   width: 1030px;
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   padding: 20px;
+  flex-direction: column;
   gap: 5px;
 }
 
@@ -27,6 +32,11 @@ body {
   padding: 5px;
   outline: none;
   caret-color: rgb(200, 200, 200);
+  &.black {
+    background-color: #444444;
+    color: #eeeeee;
+    box-shadow: 0px 20px 20px rgb(255 255 255 / 30%);
+  }
 }
 
 .row {
@@ -52,10 +62,42 @@ body {
   transition: all 0.3s;
   cursor: pointer;
   outline: none;
-}
-.button:hover {
-  box-shadow: 1px 2px 3px 1px rgb(0 0 0 / 30%);
-  transition: all 0.3s;
+
+  &:hover {
+    box-shadow: 1px 2px 3px 1px rgb(0 0 0 / 30%);
+    transition: all 0.3s;
+    &.black {
+      box-shadow: 1px 2px 3px 1px rgb(255 255 255 / 30%);
+    }
+  }
+
+  &:active {
+    box-shadow: 1px 2px 3px 1px rgb(0 0 0 / 30%);
+    background-color: #111111;
+    transform: translateY(2px);
+    transition: all 0.3s;
+    &.black {
+      box-shadow: 1px 2px 3px 1px rgb(255 255 255 / 30%);
+      background-color: #111111;
+    }
+  }
+
+  &-active {
+    box-shadow: 1px 2px 3px 1px rgb(0 0 0 / 30%);
+    background-color: #eeeeee;
+    transform: translateY(2px);
+    transition: all 0.3s;
+    &.black {
+      box-shadow: 1px 2px 3px 1px rgb(255 255 255 / 30%);
+      background-color: #111111;
+    }
+  }
+
+  &.black {
+    background: #333333;
+    border-bottom: 1px solid #4a4a4a;
+    color: #ffffff;
+  }
 }
 
 .backspace-button,
@@ -77,16 +119,9 @@ body {
 .space-button {
   flex-grow: 8;
 }
-
-.button:active {
-  background-color: #eeeeee;
-  transform: translateY(2px);
-  transition: all 0.3s;
-}
-.button-active {
-  background-color: #eeeeee;
-  transform: translateY(2px);
-  transition: all 0.3s;
+.color-button {
+  min-width: 150px;
+  align-self: end;
 }
 
 .description {

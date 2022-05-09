@@ -54,11 +54,12 @@ export default class App extends Control {
       if (this.isShiftClick) {
         this.clickShift();
       }
-      const pos = this.textArea.node.selectionStart;
-      this.text = this.text.slice(0, pos) + char + this.text.slice(pos);
+      const start = this.textArea.node.selectionStart;
+      const end = this.textArea.node.selectionEnd;
+      this.text = this.text.slice(0, start) + char + this.text.slice(end);
       this.updateText();
-      this.textArea.node.selectionEnd = pos + 1;
-      this.textArea.node.selectionStart = pos + 1;
+      this.textArea.node.selectionEnd = start + 1;
+      this.textArea.node.selectionStart = start + 1;
     } else if (type === 'capsLock') {
       this.changeCapsLock();
     } else if (type === 'langButton') {
@@ -128,20 +129,28 @@ export default class App extends Control {
   };
 
   clickBackspace = () => {
-    const pos = this.textArea.node.selectionStart;
-    if (!pos) return;
-    this.text = this.text.slice(0, pos - 1) + this.text.slice(pos);
+    let start = this.textArea.node.selectionStart;
+    const end = this.textArea.node.selectionEnd;
+    if (start !== end) {
+      start += 1;
+    }
+    this.text = this.text.slice(0, start - 1) + this.text.slice(end);
     this.updateText();
-    this.textArea.node.selectionEnd = pos - 1;
-    this.textArea.node.selectionStart = pos - 1;
+    this.textArea.node.selectionEnd = start - 1;
+    this.textArea.node.selectionStart = start - 1;
   };
 
   onDelete() {
-    const pos = this.textArea.node.selectionStart;
-    this.text = this.text.slice(0, pos) + this.text.slice(pos + 1);
+    const start = this.textArea.node.selectionStart;
+    const end = this.textArea.node.selectionEnd;
+    if (start === end) {
+      this.text = this.text.slice(0, start) + this.text.slice(end + 1);
+    } else {
+      this.text = this.text.slice(0, start) + this.text.slice(end);
+    }
     this.updateText();
-    this.textArea.node.selectionEnd = pos;
-    this.textArea.node.selectionStart = pos;
+    this.textArea.node.selectionEnd = start;
+    this.textArea.node.selectionStart = start;
   }
 
   onArrow(key) {

@@ -7,8 +7,8 @@ import TextArea from '../TextArea/TextArea';
 export default class App extends Control {
   constructor() {
     super(document.body, 'div', 'app');
-    this.text = '';
-    this.lang = 'en';
+    this.text = localStorage.getItem('area') || '';
+    this.lang = localStorage.getItem('lang') || 'en';
     this.isCaps = false;
     this.isShift = false;
     this.isShiftClick = false;
@@ -78,10 +78,12 @@ export default class App extends Control {
 
   updateText = () => {
     this.textArea.node.value = this.text;
+    localStorage.setItem('area', this.text);
   };
 
   changeLang = () => {
     this.lang = this.lang === 'en' ? 'ru' : 'en';
+    localStorage.setItem('lang', this.lang);
     this.buttons.forEach((button) => {
       button.updateTextButton(this.lang, this.isCaps, this.isShift);
     });
